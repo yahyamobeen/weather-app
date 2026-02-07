@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather</h1>
+    <form id="city-form" method="post">
+      <input id="city-input" type="text" placeholder="Enter city name" required />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="status" aria-live="polite"></div>
+    <pre id="result" class="hidden" role="region" aria-label="Weather result"></pre>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
